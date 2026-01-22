@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card" aria-labelledby="app-title">
+        <header class="card-header">
+          <figure>
+            <i class="fa-solid fa-cart-shopping fa-3x" aria-hidden="true"></i>
+          </figure>
+          <h1 id="app-title">Shopping List Manager</h1>
+        </header>
+
+        <section class="controls" aria-label="List Operations">
+          <button type="button" onclick="showAll()">1. Map (Show All)</button>
+          <button type="button" onclick="showCheap()">2. Filter (< $10)</button>
+          <button type="button" onclick="showTotal()">3. Reduce (Total)</button>
+          <button type="button" onclick="removeItem()">
+            4. Splice (Drop Laptop)
+          </button>
+
+          <button type="button" onclick="findItem()">5. Find ('Steak')</button>
+          <button type="button" onclick="checkExpensive()">
+            6. Some (Any > $100?)
+          </button>
+          <button type="button" onclick="checkFree()">
+            7. Every (All > $0?)
+          </button>
+          <button type="button" onclick="sortItems()">
+            8. Sort (Lowest to Highest)
+          </button>
+          <button type="button" onclick="addItem()">9. Push (Add Chips)</button>
+          <button type="button" onclick="removeLast()">
+            10. Pop (Remove Last)
+          </button>
+          <button type="button" onclick="removeFirst()">
+            11. Shift (Remove First)
+          </button>
+          <button type="button" onclick="runForEach()">
+            12. ForEach (Audit)
+          </button>
+
+          <button
+            type="button"
+            onclick="showObject()"
+            class="btn-orange"
+            style="grid-column: span 2"
+          >
+            13. View User Profile
+          </button>
+        </section>
+
+        <output id="result-display" role="status"
+          >Select an operation above...</output
+        >
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

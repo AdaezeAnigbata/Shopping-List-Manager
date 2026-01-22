@@ -1,0 +1,85 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #007bff;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  width: 60px;
+}
+
+h1 {
+  margin: 10px 0 0;
+  font-size: 1.5rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+button {
+  font-family: "Times New Roman", Times, serif;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Special styling for the Object button */
+.btn-orange {
+  background-color: orangered;
+}
+.btn-orange:hover {
+  background-color: orange;
+}
+
+output {
+  display: block;
+  background: #f8f9fa;
+  padding: 15px;
+  border-left: 5px solid #2ecc71;
+  border-radius: 4px;
+  font-family: "consolas", monospace;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  min-height: 60px;
+}
