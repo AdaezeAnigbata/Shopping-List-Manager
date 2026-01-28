@@ -1,30 +1,28 @@
-/* CSS Refresher Project: Layout, Flexbox, Grid & Responsiveness */
-
-* {
-  box-sizing: border-box;
-}
+/* WEEK 1: Basic Structure (No Flexbox Centering or Fancy Shadows) */
 
 body {
   font-family: "Times New Roman", Times, serif;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-color: #f4f4f4;
   color: #333;
   display: flex;
   justify-content: center;
   padding-top: 40px;
   margin: 0;
+  text-align: center;
 }
 
 main {
   width: 100%;
   max-width: 600px;
+  margin: 0 auto;
 }
 
 .card {
   background-color: white;
-  padding: 2rem;
+  padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
   border-top: 5px solid #007bff;
 }
 
@@ -40,15 +38,9 @@ figure {
   padding: 0;
 }
 
-.icon {
-  width: 60px;
-}
-
 h1 {
-  text-align: center;
-  color: #333;
-  margin: 1.5rem;
-  font-size: 2.5rem;
+  margin: 10px 0 0;
+  font-size: 1.5rem;
 }
 
 .controls {
@@ -65,10 +57,9 @@ button {
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 6px;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
 }
+
 button:hover {
   background-color: #0056b3;
 }
@@ -76,16 +67,12 @@ button:hover {
 /* Special styling for the Object button */
 .btn-orange {
   background-color: orangered;
+  grid-column: 1 / -1;
 }
 .btn-orange:hover {
   background-color: orange;
 }
 
-.span-two {
-  grid-column: span 2;
-}
-
-#display,
 output {
   display: block;
   background: #f8f9fa;
@@ -96,25 +83,5 @@ output {
   font-size: 1rem;
   white-space: pre-wrap;
   min-height: 60px;
-}
-
-@media (max-width: 600px) {
-  body {
-    background: #e3f2fd; /* Changes background on phone */
-    align-items: flex-start;
-    padding-top: 20px;
-  }
-
-  .card {
-    width: 95%;
-    padding: 1rem;
-  }
-
-  .controls {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
+  text-align: left;
 }
