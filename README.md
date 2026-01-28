@@ -12,17 +12,17 @@ This project acts as a store inventory system. It starts with a default list of 
 - **Filter Deals:** Uses `.filter()` to instantly find items under $10.
 - **Calculate Total:** Uses `.reduce()` to sum up the price of the entire cart.
 - **Inventory Control:**
-  - **Push:** Adds "Chips" to the list.
-  - **Pop:** Removes the last item.
-  - **Shift:** Removes the first item.
-  - **Splice:** Removes specific items (like the Laptop).
+- **Push:** Adds "Chips" to the list.
+- **Pop:** Removes the last item.
+- **Shift:** Removes the first item.
+- **Splice:** Removes specific items (like the Laptop).
 - **Audit System:** Uses `.forEach()` to generate a printed "receipt" in the display box.
 - **Search & Sort:** Includes functionality to find specific items or sort by price (Low to High).
 
 ## 🛠️ Tech Stack
 
 - **HTML5:** Semantic structure.
-- **CSS3:** Clean styling with a responsive grid layout.
+- **CSS3:** Responsive design using CSS Grid for layout, Flexbox for alignment, and Media Queries for mobile compatibility.
 - **JavaScript (ES6+):** Strict mode, Arrow functions, Array manipulation and Objects.
 
 ## 📦 How to Run
