@@ -1,0 +1,120 @@
+/*SCSS: Variables, Nesting, Grid, Flexbox & Responsiveness*/
+@use "base";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: base.$font-stack;
+  background: base.$bg-gradient;
+  color: base.$text-color;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  background-color: base.$card-bg;
+  border-radius: base.$border-radius;
+  box-shadow: base.$card-shadow;
+  border-top: 5px solid base.$primary-blue;
+  padding: base.$card-padding;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid base.$border-light;
+  padding-bottom: 15px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  width: base.$icon-size;
+}
+
+h1 {
+  text-align: center;
+  color: base.$text-color;
+  margin: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+button {
+  font-family: base.$font-stack;
+  padding: base.$button-padding;
+  cursor: pointer;
+  background-color: base.$primary-blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: base.$hover-blue;
+  }
+
+  /* Special styling for the Object button */
+  &.btn-orange {
+    background-color: base.$btn-orange;
+    grid-column: 1 / -1;
+
+    &:hover {
+      background-color: base.$btn-orange-hover;
+    }
+  }
+}
+
+#display,
+output {
+  display: block;
+  background: base.$display-bg;
+  padding: 15px;
+  border-left: 5px solid base.$success-green;
+  border-radius: 4px;
+  font-family: "consolas", monospace;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  min-height: 60px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: base.$mobile-bg; /* Changes background on phone */
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .card {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}

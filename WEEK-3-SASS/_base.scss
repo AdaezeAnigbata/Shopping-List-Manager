@@ -1,0 +1,37 @@
+// _base.scss
+
+// colors
+$primary-blue: #007bff; // Primary blue color
+$hover-blue: #0056b3; // For button hover state
+$delete-red: orangered; // For delete button
+$text-color: #333; // For the main text
+$card-bg: white; // For the card background
+
+// fonts
+$font-stack: "Times New Roman", Times, serif; // Main font stack
+
+// shadows
+$card-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); // For the card shadow
+
+// gradients
+$bg-gradient: linear-gradient(
+  135deg,
+  #f5f7fa 0%,
+  #c3cfe2 100%
+); // Background gradient
+
+// sizes
+$card-padding: 2rem; // Padding inside the card
+$border-radius: 12px; // Border radius for cards and buttons
+$icon-size: 60px; // Size for icons
+$button-padding: 12px; // Padding for buttons
+
+// additional colors
+$border-light: #eee; // Light gray lines
+$display-bg: #f8f9fa; // Background for the result box
+$success-green: #2ecc71; // The green border color
+$mobile-bg: #e3f2fd; // The light blue background for mobile
+
+// button colors
+$btn-orange: orangered;
+$btn-orange-hover: orange;
